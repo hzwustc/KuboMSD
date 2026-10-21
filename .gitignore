@@ -1,0 +1,36 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.a
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build products
+build/
+dist/
+*.whl
+*.tar.gz
+
+# Calculation outputs and local datasets
+runs/
+data/
+validation/
+radial_tables/
+operators_cache/
+*.partial.h5
+*.progress.json
+slurm-*.out
+*.log
+
+# Editor and local configuration
+.vscode/
+.idea/
+.DS_Store
+.env
+.env.*

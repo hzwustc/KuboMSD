@@ -1,0 +1,9 @@
+* text=auto
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.slurm text eol=lf
+*.npz binary
+*.h5 binary

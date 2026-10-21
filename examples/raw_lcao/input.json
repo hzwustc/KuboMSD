@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "structure": {
+    "file": "POSCAR"
+  },
+  "model": {
+    "type": "lcao",
+    "spin": "none",
+    "hamiltonian": {
+      "path": "hamiltonians.h5",
+      "format": "deeptb",
+      "energy_unit": "eV",
+      "index_base": 0
+    },
+    "orbitals": {
+      "names": [
+        "X.orb"
+      ],
+      "dir": ".",
+      "convention": "abacus-real"
+    },
+    "integrals": {
+      "radial_points": 40,
+      "polar_points": 12,
+      "azimuthal_points": 24,
+      "max_refinements": 2,
+      "tolerance": 1e-05
+    }
+  }
+}
