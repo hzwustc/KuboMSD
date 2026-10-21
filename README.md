@@ -2,6 +2,8 @@
 
 [中文说明](README.zh-CN.md)
 
+The standalone GPU edition (**1.0.4**) is in [`kubo_msd_gpu/`](kubo_msd_gpu/README.md). It provides GPU operator construction and single-GPU transport without the CPU C++ extensions. Install it in a separate virtual environment; both editions use the Python package name `kubo_msd`. The documentation below describes the root package.
+
 KuboMSD computes energy-resolved electronic mean-square displacement (MSD), velocity autocorrelation and diffusion coefficients from a fixed single-particle Hamiltonian. It supports orthogonal and nonorthogonal bases at a single Γ point.
 
 Version: **1.1.0.dev4**. The package is under development. The supported source-build environment is Linux with Python 3.10 or later and a C++17 compiler with OpenMP; the release checks use Python 3.11.

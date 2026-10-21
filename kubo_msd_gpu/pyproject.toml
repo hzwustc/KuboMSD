@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kubo-msd-gpu"
+version = "1.0.4"
+description = "Single GPU, device-resident Gamma-point Kubo MSD"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "h5py>=3.8", "cupy-cuda12x==13.6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+kubomsd-gpu = "kubo_msd.gpu_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+kubo_msd = ["operators/gpu/kernels/*.cu"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["gpu: requires real CUDA", "real: requires identified material input"]

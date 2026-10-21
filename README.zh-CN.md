@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+独立 GPU 版 **1.0.4** 位于 [`kubo_msd_gpu/`](kubo_msd_gpu/README.md)，提供 GPU 算符构造和单 GPU 输运计算，不依赖 CPU C++ 扩展。两个版本共用 Python 包名 `kubo_msd`，请分别安装在独立虚拟环境中。下文介绍仓库根目录的版本。
+
 KuboMSD 根据固定的单粒子哈密顿量计算能量分辨的电子均方位移（MSD）、速度自关联函数和扩散系数，支持单个 Γ 点下的正交与非正交基组。
 
 当前版本为 **1.1.0.dev4**，仍属开发版本。源码构建环境为 Linux、Python 3.10 及以上、支持 OpenMP 的 C++17 编译器；本次发布检查使用 Python 3.11。

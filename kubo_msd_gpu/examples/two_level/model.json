@@ -1,0 +1,65 @@
+{
+  "format": "kubomsd-model-v1",
+  "n_orbitals": 2,
+  "basis": "orthogonal",
+  "kpoint": [
+    0,
+    0,
+    0
+  ],
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "orbital_order": [
+    "atom0:s",
+    "atom1:s"
+  ],
+  "hamiltonian": {
+    "path": "H.npz",
+    "shape": [
+      2,
+      2
+    ],
+    "dtype": "complex128",
+    "storage": "dense",
+    "index_base": 0,
+    "representation": "covariant"
+  },
+  "velocity_source": {
+    "type": "position",
+    "matrices": {
+      "x": {
+        "path": "X.npz",
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "complex128",
+        "storage": "dense",
+        "index_base": 0,
+        "representation": "covariant"
+      },
+      "y": {
+        "path": "Y.npz",
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "complex128",
+        "storage": "dense",
+        "index_base": 0,
+        "representation": "covariant"
+      },
+      "z": {
+        "path": "Z.npz",
+        "shape": [
+          2,
+          2
+        ],
+        "dtype": "complex128",
+        "storage": "dense",
+        "index_base": 0,
+        "representation": "covariant"
+      }
+    }
+  }
+}

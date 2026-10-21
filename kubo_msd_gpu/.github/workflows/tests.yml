@@ -1,0 +1,28 @@
+name: Reference tests and package
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Install reference and build dependencies
+        run: |
+          python -m pip install -c constraints-tested.txt '.[test]' build
+      - name: CPU reference tests
+        run: >-
+          python -m pytest -q tests/unit tests/integration
+          --ignore=tests/integration/test_gpu_cli_pipeline.py
+          --deselect=tests/integration/test_cli.py::test_cli_end_to_end_and_existing_directory
+      - name: Build source and wheel distributions
+        run: python -m build

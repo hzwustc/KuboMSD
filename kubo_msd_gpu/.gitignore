@@ -1,0 +1,33 @@
+# Python environments and generated files
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build products
+/build/
+/dist/
+
+# Local calculations and input data
+/runs/
+/validation/
+/local_data/
+.cupy/
+.cupy_cache/
+*.log
+*.partial.h5
+
+# Editors and local settings
+.vscode/
+.idea/
+.DS_Store
+.env
+.env.*
