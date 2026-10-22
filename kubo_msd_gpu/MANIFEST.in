@@ -1,3 +1,4 @@
+include LICENSE
 include README.md CHANGELOG.md CONTRIBUTING.md
 include pyproject.toml setup.py MANIFEST.in constraints-tested.txt env-gpu.sh
 include .gitignore .gitattributes

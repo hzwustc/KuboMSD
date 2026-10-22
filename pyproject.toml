@@ -7,6 +7,7 @@ name = "kubo-msd"
 version = "1.1.0.dev4"
 description = "Independent Gamma-point Kubo MSD transport with exact and stochastic solvers"
 readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 keywords = ["quantum transport", "Kubo", "mean square displacement", "tight binding"]
 classifiers = [

@@ -22,4 +22,4 @@ The repository examples are synthetic. Real material Hamiltonians, numerical orb
 
 ## License status
 
-No open-source license has been selected for the project. This file records provenance and references; it does not assign a license to the project or to third-party material.
+KuboMSD and the standalone GPU edition are licensed under the [MIT License](LICENSE). Third-party dependencies and materials retain their respective licenses. This file records provenance and references; it does not relicense third-party material.

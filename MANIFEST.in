@@ -1,3 +1,4 @@
+include LICENSE
 include README.md README.zh-CN.md CHANGELOG.md CONTRIBUTING.md SOURCES.md
 include SOURCE_SHA256SUMS
 recursive-include cpp *.cpp *.hpp

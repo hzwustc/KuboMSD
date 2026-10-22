@@ -79,4 +79,4 @@ Passing software tests does not establish convergence for a material calculation
 
 ## License
 
-No open-source license has been selected for this repository. Dependency licenses remain those of their respective projects. See [Sources](SOURCES.md).
+KuboMSD and the standalone GPU edition are licensed under the [MIT License](LICENSE). Dependency licenses remain those of their respective projects. See [Sources](SOURCES.md).

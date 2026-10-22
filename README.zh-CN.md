@@ -66,4 +66,4 @@ kubomsd run \
 
 ## 许可证
 
-本仓库暂未指定开源许可证。各项依赖沿用其自身许可证，详情见[参考资料与来源](SOURCES.md)。
+KuboMSD 及独立 GPU 版采用 [MIT 许可证](LICENSE)。各项依赖沿用其自身许可证，详情见[参考资料与来源](SOURCES.md)。
